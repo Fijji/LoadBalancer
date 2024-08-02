@@ -1,4 +1,4 @@
-package com.revolut.interview.exceptions;
+package com.exercise.interview.exceptions;
 
 /**
  * Exception thrown when a backend instance with a duplicate address is registered.

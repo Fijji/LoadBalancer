@@ -1,4 +1,4 @@
-package com.revolut.interview.exceptions;
+package com.exercise.interview.exceptions;
 
 /**
  * Exception thrown when the maximum capacity of backend instances is reached.

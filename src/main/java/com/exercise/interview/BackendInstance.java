@@ -1,21 +1,19 @@
-package com.revolut.interview;
+package com.exercise.interview;
+
 /**
  * Represents a backend instance with a unique address.
  */
-public class BackendInstance {
-    private final String address;
-
+public record BackendInstance(String address) {
     /**
      * Constructs a BackendInstance with the given address.
      *
      * @param address the unique address of the backend instance
      * @throws IllegalArgumentException if the address is null or empty
      */
-    public BackendInstance(String address) {
+    public BackendInstance {
         if (address == null || address.isEmpty()) {
             throw new IllegalArgumentException("Address cannot be null or empty.");
         }
-        this.address = address;
     }
 
     /**
@@ -23,13 +21,9 @@ public class BackendInstance {
      *
      * @return the address
      */
-    public String getAddress() {
-        return address;
-    }
-
     @Override
-    public int hashCode() {
-        return address.hashCode();
+    public String address() {
+        return address;
     }
 
     @Override

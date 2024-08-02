@@ -1,6 +1,6 @@
-package com.revolut.interview.strategy;
+package com.exercise.interview.strategy;
 
-import com.revolut.interview.BackendInstance;
+import com.exercise.interview.BackendInstance;
 
 import java.util.Map;
 
